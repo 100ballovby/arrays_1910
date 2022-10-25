@@ -8,7 +8,7 @@ void task3_5() {
     int ** matrix = new int *[n];
     for (int i = 0; i < n; i++) {
         matrix[i] = new int[n];
-    }
+    }  // создаю матрицу и помещаю в нее n-количество массивов
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             cout << "Введите (" << i << ":" << j << ")-й элемент матрицы: ";
@@ -16,9 +16,9 @@ void task3_5() {
         }
     }
     cout << endl;
-    for (int j = 0; j < n; j++){
-        for (int i = n - 1; i >= 0; i--)
-            cout << matrix[i][j] << " ";
+    for (int i = 0; i < n; i++){
+        for (int j = n - 1; j >= 0; j--)
+            cout << matrix[j][i] << " ";
         cout << endl;
     }
 
